@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.1.1 (Python 3.13.1 on darwin)" generated="2025-01-16T02:15:37.753309" rpa="false" schemaversion="5">
+<suite id="s1" name="To Do List" source="/Users/natchaya/Desktop/Blue Pi test/Automate/to_do_list.robot">
+<test id="s1-t1" name="TC_01 : Visit To-Do-List Website" line="62">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-01-16T02:15:38.078071" level="INFO">Opening browser 'Chrome' to base url 'https://abhigyank.github.io/To-Do-List/'.</msg>
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-01-16T02:15:38.077925" elapsed="1.833433"/>
+</kw>
+<doc>Verify that can visit website.</doc>
+<status status="PASS" start="2025-01-16T02:15:38.077410" elapsed="1.834379"/>
+</test>
+<test id="s1-t2" name="TC_02 : Add Item" line="66">
+<kw name="Add Item">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-01-16T02:15:39.913338" level="INFO">Typing text 'Task' into text field 'xpath=//*[@id="new-task"]'.</msg>
+<arg>xpath=//*[@id="new-task"]</arg>
+<arg>${item_eng}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-01-16T02:15:39.913006" elapsed="0.128722"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-01-16T02:15:41.045107" level="INFO">Slept 1 second.</msg>
+<arg>1</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-01-16T02:15:40.041908" elapsed="1.004011"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-01-16T02:15:41.047666" level="INFO">Clicking element 'xpath://button/i[text()='add']'.</msg>
+<arg>xpath://button/i[text()='add']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-01-16T02:15:41.046840" elapsed="0.048708"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-01-16T02:15:42.098067" level="INFO">Slept 1 second.</msg>
+<arg>1</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-01-16T02:15:41.095679" elapsed="1.002784"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-01-16T02:15:42.100161" level="INFO">Typing text 'งาน' into text field 'xpath=//*[@id="new-task"]'.</msg>
+<arg>xpath=//*[@id="new-task"]</arg>
+<arg>${item_thai}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-01-16T02:15:42.099178" elapsed="0.072000"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-01-16T02:15:43.174221" level="INFO">Slept 1 second.</msg>
+<arg>1</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-01-16T02:15:42.171303" elapsed="1.003497"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-01-16T02:15:43.176261" level="INFO">Clicking element 'xpath://button/i[text()='add']'.</msg>
+<arg>xpath://button/i[text()='add']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-01-16T02:15:43.175412" elapsed="0.045655"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-01-16T02:15:44.222708" level="INFO">Slept 1 second.</msg>
+<arg>1</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-01-16T02:15:43.221243" elapsed="1.001898"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-01-16T02:15:44.224762" level="INFO">Typing text '3' into text field 'xpath=//*[@id="new-task"]'.</msg>
+<arg>xpath=//*[@id="new-task"]</arg>
+<arg>${item_number}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-01-16T02:15:44.223848" elapsed="0.055011"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-01-16T02:15:45.279968" level="INFO">Slept 1 second.</msg>
+<arg>1</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-01-16T02:15:44.279018" elapsed="1.001274"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-01-16T02:15:45.281610" level="INFO">Clicking element 'xpath://button/i[text()='add']'.</msg>
+<arg>xpath://button/i[text()='add']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-01-16T02:15:45.280859" elapsed="0.045374"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-01-16T02:15:46.327774" level="INFO">Slept 1 second.</msg>
+<arg>1</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-01-16T02:15:45.326394" elapsed="1.001607"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-01-16T02:15:46.329141" level="INFO">Typing text '!@#$%^&amp;*' into text field 'xpath=//*[@id="new-task"]'.</msg>
+<arg>xpath=//*[@id="new-task"]</arg>
+<arg>${item_special_char}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-01-16T02:15:46.328408" elapsed="0.055008"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-01-16T02:15:47.384659" level="INFO">Slept 1 second.</msg>
+<arg>1</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-01-16T02:15:46.383539" elapsed="1.001721"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-01-16T02:15:47.387017" level="INFO">Clicking element 'xpath://button/i[text()='add']'.</msg>
+<arg>xpath://button/i[text()='add']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-01-16T02:15:47.386110" elapsed="0.045337"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-01-16T02:15:48.434411" level="INFO">Slept 1 second.</msg>
+<arg>1</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-01-16T02:15:47.431625" elapsed="1.003172"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-01-16T02:15:48.436149" level="INFO">Typing text 'Test space' into text field 'xpath=//*[@id="new-task"]'.</msg>
+<arg>xpath=//*[@id="new-task"]</arg>
+<arg>${item_space}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-01-16T02:15:48.435356" elapsed="0.055713"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-01-16T02:15:49.493598" level="INFO">Slept 1 second.</msg>
+<arg>1</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-01-16T02:15:48.491192" elapsed="1.002504"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-01-16T02:15:49.493998" level="INFO">Clicking element 'xpath://button/i[text()='add']'.</msg>
+<arg>xpath://button/i[text()='add']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-01-16T02:15:49.493842" elapsed="0.025497"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-01-16T02:15:50.520971" level="INFO">Slept 1 second.</msg>
+<arg>1</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-01-16T02:15:49.519477" elapsed="1.001659"/>
+</kw>
+<arg>${item_eng}</arg>
+<arg>${item_thai}</arg>
+<arg>${item_number}</arg>
+<arg>${item_special_char}</arg>
+<arg>${item_space}</arg>
+<status status="PASS" start="2025-01-16T02:15:39.912580" elapsed="10.608778"/>
+</kw>
+<doc>Verify that can add item in different case.</doc>
+<status status="PASS" start="2025-01-16T02:15:39.912049" elapsed="10.610538"/>
+</test>
+<test id="s1-t3" name="TC_03 : Delete Task In To-Do Task Tap" line="70">
+<kw name="Delete Task">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-01-16T02:15:50.526758" level="INFO">Clicking element 'xpath=/html/body/div/div/div[1]/a[2]'.</msg>
+<arg>xpath=/html/body/div/div/div[1]/a[2]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-01-16T02:15:50.526482" elapsed="0.049608"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-01-16T02:15:51.578479" level="INFO">Slept 1 second.</msg>
+<arg>1</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-01-16T02:15:50.576251" elapsed="1.002379"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-01-16T02:15:51.579631" level="INFO">Clicking element 'xpath=//*[@id="2"]/span'.</msg>
+<arg>xpath=//*[@id="2"]/span</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-01-16T02:15:51.579326" elapsed="0.043131"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-01-16T02:15:52.623151" level="INFO">Slept 1 second.</msg>
+<arg>1</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-01-16T02:15:51.622592" elapsed="1.000944"/>
+</kw>
+<status status="PASS" start="2025-01-16T02:15:50.525956" elapsed="2.097926"/>
+</kw>
+<doc>Verify that after add item in Add Item tap then can delete task that already added in To-Do Task Tap.</doc>
+<status status="PASS" start="2025-01-16T02:15:50.523812" elapsed="2.100491"/>
+</test>
+<test id="s1-t4" name="TC_04 : Check Taskn In To-Do Task Tap" line="74">
+<kw name="Check Task">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-01-16T02:15:52.627052" level="INFO">Clicking element 'xpath=/html/body/div/div/div[1]/a[2]'.</msg>
+<arg>xpath=/html/body/div/div/div[1]/a[2]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-01-16T02:15:52.626661" elapsed="0.045400"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-01-16T02:15:53.674521" level="INFO">Slept 1 second.</msg>
+<arg>1</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-01-16T02:15:52.672211" elapsed="1.002683"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-01-16T02:15:53.676077" level="INFO">Clicking element 'xpath=//*[@id="incomplete-tasks"]/li/label/span[4]'.</msg>
+<arg>xpath=//*[@id="incomplete-tasks"]/li/label/span[4]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-01-16T02:15:53.675466" elapsed="0.055707"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-01-16T02:15:54.733160" level="INFO">Slept 1 second.</msg>
+<arg>1</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-01-16T02:15:53.731349" elapsed="1.002303"/>
+</kw>
+<status status="PASS" start="2025-01-16T02:15:52.626193" elapsed="2.107806"/>
+</kw>
+<doc>Verify that after add item in Add Item tap then can check complete task in To-Do Task Tap.</doc>
+<status status="PASS" start="2025-01-16T02:15:52.625096" elapsed="2.109367"/>
+</test>
+<test id="s1-t5" name="TC_05 : Delete Task In Completed Tap" line="78">
+<kw name="Delete Completed">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-01-16T02:15:54.737033" level="INFO">Clicking element 'xpath=/html/body/div/div/div[1]/a[3]/span'.</msg>
+<arg>xpath=/html/body/div/div/div[1]/a[3]/span</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-01-16T02:15:54.736618" elapsed="0.053372"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-01-16T02:15:55.790837" level="INFO">Slept 1 second.</msg>
+<arg>1</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-01-16T02:15:54.790116" elapsed="1.001010"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-01-16T02:15:55.792055" level="INFO">Clicking element 'xpath=/html/body/div/div/div[4]/ul/li/button'.</msg>
+<arg>xpath=/html/body/div/div/div[4]/ul/li/button</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-01-16T02:15:55.791585" elapsed="0.045365"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-01-16T02:15:56.837993" level="INFO">Slept 1 second.</msg>
+<arg>1</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-01-16T02:15:55.837100" elapsed="1.001620"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2025-01-16T02:15:56.839616" elapsed="0.124747"/>
+</kw>
+<status status="PASS" start="2025-01-16T02:15:54.736091" elapsed="2.228350"/>
+</kw>
+<doc>Verify that after check compelte task in To-Do Task Tap then can delete task that already check in Completed Tap.</doc>
+<status status="PASS" start="2025-01-16T02:15:54.734893" elapsed="2.229654"/>
+</test>
+<kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2025-01-16T02:15:56.964847" elapsed="0.000095"/>
+</kw>
+<doc>A Test For To-Do-List Website</doc>
+<status status="PASS" start="2025-01-16T02:15:37.758058" elapsed="19.206907"/>
+</suite>
+<statistics>
+<total>
+<stat pass="5" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="5" fail="0" skip="0" id="s1" name="To Do List">To Do List</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
